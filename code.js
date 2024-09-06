@@ -4,7 +4,7 @@ function fib(n) {
         a[0] = 0; 
         return a;
     }
-    a[1] = 1;
+    a[1] = 0;
     if (n == 1) { return a; }
     for (i = 2; i <= n ; i++) {
         a[i] = fibHelp(i - 1) + fibHelp(i - 2);
