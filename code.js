@@ -1,12 +1,13 @@
 function fib(n) {
     a = new Array(n);
     if (n == 0) {
-        a[0] = 0; 
+        a[0] = 0;
         return a;
     }
-    a[1] = 0;
+    a[0] = 0;
+    a[1] = 1;
     if (n == 1) { return a; }
-    for (i = 2; i <= n ; i++) {
+    for (i = 2; i <= n; i++) {
         a[i] = fibHelp(i - 1) + fibHelp(i - 2);
     }
     return a;
