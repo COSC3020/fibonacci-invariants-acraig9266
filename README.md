@@ -27,3 +27,5 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+Invariant: The elements in a[0... i-1] are the first i elements of the fibonacci sequence.
