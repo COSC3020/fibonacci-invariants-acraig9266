@@ -1,3 +1,5 @@
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+Discussed proper array initialization and incrementing i rather than decrementing i with Aaron Krapes 
 # Fibonacci Invariants
 
 Recall the definition of the Fibonacci series: the first number is 0, the second
@@ -29,3 +31,5 @@ most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
 Invariant: The elements in a[0... i-1] are the first i elements of the fibonacci sequence.
+
+If the loop is reached, the array is always a = [0, 1] before entering the first iteration. [0, 1] is the first two elements of the fibonacci sequence and the loop is entered initially with i = 2. Since i is incremented by 1 every iteration and there is always 1 element of the Fibonacci sequence added by using the previous 2 elements, i is equal to the number of fibonacci numbers in the array.
