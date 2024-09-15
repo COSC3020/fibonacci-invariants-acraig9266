@@ -1,19 +1,24 @@
-function fib(n) {
-    let a = new Array(n);
-    if (n == 0) {
-        a[0] = 0;
-        return a;
-    }
-    a = [0, 1];
-    if (n == 1) { return a; }
-    for (i = 2; i <= n; i++) {
-        a[i] = fibHelp(i)
-    }
-    return a;
+function fib(n){
+	let array = new Array(n);
+	if(n == 0) {
+		array[0] = 0;
+		return array;
+	}
+	array = [0, 1];
+	if (n == 1) {
+		return array;
+	} else {
+		fibHelp(n, 2, array);
+	}
+	return array;
 }
 
-function fibHelp(n) {
-    if (n == 1) { return 1; }
-    else if (n == 0) { return 0; }
-    else { return fibHelp(n - 1) + fibHelp(n - 2); }
+function fibHelp(n, i, array) {
+	if (n < i) {
+		return;
+	} else {
+		array[i] = array[i - 1] + array[i - 2];
+		i += 1;
+		fibHelp(n, i, array);
+	}
 }
